@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.local
+.vite/
+
+# Reference binaries used for research only; never commit or ship them.
+*.apk
+*.xapk
+
+# Local QA screenshots
+.shots/
+*.tsbuildinfo
