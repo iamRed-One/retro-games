@@ -86,8 +86,15 @@ Built from `Retro_Arcade_Revival_Project_Concept.docx` with React, TypeScript, V
 
 ## Play it
 
-Live at **https://iamred-one.github.io/retro-games/**. Every push to `main` rebuilds and
-redeploys it through GitHub Actions (`.github/workflows/deploy.yml`).
+Live at **https://iamred-one.github.io/retro-games/** (GitHub Pages, served from the
+`gh-pages` branch). To publish a new version:
+
+```bash
+npm run deploy     # builds, then pushes dist/ to gh-pages (tools/deploy.mjs)
+```
+
+Pushing to `main` only updates the source; run `npm run deploy` to update the live site.
+Players with the installed app get the update the next time they open it online.
 
 ## Run it
 
